@@ -6,13 +6,13 @@
   <title>Lio — Your AI Life Admin Assistant</title>
   <meta name="description" content="Lio scans your Gmail for bills, renewals, and warranties — so you never miss a payment or lose a receipt again. Privacy-first. On-device AI.">
   <meta property="og:title" content="Lio — Your AI Life Admin Assistant">
-  <meta property="og:description" content="Stop wasting hours on life admin. Lio finds your bills, tracks your warranties, and keeps you ahead of every due date.">
+  <meta property="og:description" content="Lio found your water bill was 30% higher this month before you even opened the email.">
   <meta property="og:url" content="https://getlio.app">
   <meta property="og:type" content="website">
   <link rel="icon" href="/assets/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,400&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,400&family=JetBrains+Mono:wght@500;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
@@ -42,8 +42,8 @@
     <div class="container hero-inner">
       <div class="hero-content">
         <div class="hero-eyebrow">Privacy-first AI assistant</div>
-        <h1>Lio scans your email for bills, renewals &amp; warranties&mdash;so you <em>never</em> miss a thing</h1>
-        <p class="hero-body">You spend 5+ hours every week on life admin&mdash;tracking due dates, hunting for receipts, wondering when warranties expire. Lio reads your Gmail and handles it all, entirely on your device.</p>
+        <h1>Lio found your water bill was 30% higher this month&mdash;before you even opened the email</h1>
+        <p class="hero-body">Bills get buried. Warranties expire quietly. Renewal charges slip past autopay. Lio reads your Gmail on-device, catches what matters, and tells you before it costs you money.</p>
         <div class="hero-actions">
           <a href="#get-lio" class="btn btn-primary">Download for iOS</a>
           <a href="#how-it-works" class="btn btn-secondary">See how it works</a>
@@ -57,34 +57,39 @@
 
       <div class="hero-visual">
         <div class="phone-wrap">
+          <!-- Kitchen counter context -->
+          <div class="phone-context">
+            <div class="phone-shadow"></div>
+          </div>
           <div class="phone">
             <div class="phone-notch"></div>
             <div class="phone-screen">
               <div class="ps-header">
-                <span class="ps-greeting">Good morning</span>
-                <span class="ps-sub">3 items need your attention</span>
+                <span class="ps-greeting">Good morning, Sarah</span>
+                <span class="ps-sub">2 items need your attention</span>
               </div>
               <div class="ps-cards">
                 <div class="ps-card">
-                  <div class="ps-card-label">Due tomorrow</div>
-                  <div class="ps-card-vendor">Comcast Internet</div>
+                  <div class="ps-card-label">Due Friday</div>
+                  <div class="ps-card-vendor">Xfinity Internet</div>
                   <div class="ps-card-amount">$89.99</div>
                   <span class="ps-card-btn">Pay Now</span>
                 </div>
                 <div class="ps-card">
-                  <div class="ps-card-label">Renews Mar 25</div>
-                  <div class="ps-card-vendor">Netflix Premium</div>
-                  <div class="ps-card-amount">$22.99</div>
-                  <span class="ps-card-btn">Review</span>
+                  <div class="ps-card-label">Warranty expires Apr 3</div>
+                  <div class="ps-card-vendor">MacBook Pro 14&Prime;</div>
+                  <div class="ps-card-amount">16 days left</div>
+                  <span class="ps-card-btn">View Coverage</span>
                 </div>
                 <div class="ps-card">
-                  <div class="ps-card-label">Warranty expiring</div>
-                  <div class="ps-card-vendor">Samsung TV 65&Prime;</div>
-                  <div class="ps-card-amount">Apr 12</div>
-                  <span class="ps-card-btn">View Details</span>
+                  <div class="ps-card-label">Renews Mar 28</div>
+                  <div class="ps-card-vendor">Dyson Airwrap Plan</div>
+                  <div class="ps-card-amount">$14.99/mo</div>
+                  <span class="ps-card-btn">Review</span>
                 </div>
               </div>
               <div class="ps-settled">
+                <div class="ps-settled-header">Settled</div>
                 <div class="ps-mini">
                   <span class="ps-mini-name">Electric bill</span>
                   <span class="ps-mini-status">
@@ -103,8 +108,13 @@
             </div>
           </div>
           <div class="phone-annotation">
-            <strong>Anomaly detected</strong>
-            Water bill up 34% from last month
+            <span class="annotation-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C07850" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><circle cx="12" cy="17" r="0.5" fill="#C07850"/></svg>
+            </span>
+            <div>
+              <strong>Anomaly detected</strong>
+              Water bill up 34% from last month
+            </div>
           </div>
         </div>
       </div>
@@ -138,6 +148,94 @@
     </div>
   </section>
 
+  <!-- ==================== Before / After ==================== -->
+  <section class="section" id="before-after">
+    <div class="container">
+      <div style="text-align:center; max-width:560px; margin: 0 auto 56px;">
+        <span class="section-label reveal">Why Lio</span>
+        <h2 class="reveal">The difference is money you keep</h2>
+      </div>
+
+      <div class="ba-grid">
+        <div class="ba-card ba-before reveal">
+          <div class="ba-label">Without Lio</div>
+          <div class="ba-items">
+            <div class="ba-item">
+              <span class="ba-icon ba-icon-bad">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="#C44" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <strong>$50 late fee</strong>
+                <p>An invoice got buried under 200 marketing emails. Autopay wasn&rsquo;t set up. You found it a week late.</p>
+              </div>
+            </div>
+            <div class="ba-item">
+              <span class="ba-icon ba-icon-bad">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="#C44" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <strong>$299 warranty claim missed</strong>
+                <p>Your Dyson broke 3 weeks after the warranty quietly expired. The receipt was somewhere in Gmail.</p>
+              </div>
+            </div>
+            <div class="ba-item">
+              <span class="ba-icon ba-icon-bad">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="#C44" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <strong>$22/mo forgotten subscription</strong>
+                <p>A free trial auto-renewed 6 months ago. You haven&rsquo;t opened the app once.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ba-card ba-after reveal">
+          <div class="ba-label ba-label-good">With Lio</div>
+          <div class="ba-items">
+            <div class="ba-item">
+              <span class="ba-icon ba-icon-good">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div>
+                <strong>Lio pings you 2 days before</strong>
+                <p>&ldquo;Your Xfinity bill of $89.99 is due Friday.&rdquo; One tap to pay. Done before coffee.</p>
+              </div>
+            </div>
+            <div class="ba-item">
+              <span class="ba-icon ba-icon-good">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div>
+                <strong>Warranty alert 3 weeks early</strong>
+                <p>&ldquo;Your MacBook Pro warranty expires April 3. Want to review coverage?&rdquo;</p>
+              </div>
+            </div>
+            <div class="ba-item">
+              <span class="ba-icon ba-icon-good">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div>
+                <strong>Renewal caught before it charges</strong>
+                <p>&ldquo;Your Hulu trial renews March 28 at $17.99/mo. Keep or cancel?&rdquo;</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== What Lio Doesn't Do ==================== -->
+  <section class="not-section">
+    <div class="container">
+      <div class="not-inner reveal">
+        <h3>Lio doesn&rsquo;t read your personal life</h3>
+        <p>Lio isn&rsquo;t interested in your family photos, group chats, or love letters. It specifically looks for patterns in bills, renewals, receipts, and warranty emails. Everything else is ignored. Your personal correspondence is none of our business&mdash;and it never touches Lio&rsquo;s classification pipeline.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- ==================== How It Works ==================== -->
   <section class="section" id="how-it-works">
     <div class="container">
@@ -151,11 +249,14 @@
           <div class="hiw-num">01</div>
           <div>
             <h3>Connect your Gmail</h3>
-            <p>Sign in securely with your Google account. Lio requests read-only access&mdash;it can never send, delete, or modify your emails.</p>
-            <div class="g-signin" aria-label="Sign in with Google button preview">
-              <svg width="18" height="18" viewBox="0 0 18 18"><path d="M17.64 9.2a10.3 10.3 0 0 0-.16-1.84H9v3.48h4.84a4.14 4.14 0 0 1-1.8 2.72v2.26h2.92A8.78 8.78 0 0 0 17.64 9.2z" fill="#4285F4"/><path d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.92-2.26c-.8.54-1.83.86-3.04.86-2.34 0-4.32-1.58-5.03-3.71H.96v2.33A9 9 0 0 0 9 18z" fill="#34A853"/><path d="M3.97 10.71A5.41 5.41 0 0 1 3.68 9c0-.59.1-1.17.28-1.71V4.96H.96A9 9 0 0 0 0 9c0 1.45.35 2.82.96 4.04l3.01-2.33z" fill="#FBBC05"/><path d="M9 3.58c1.32 0 2.51.45 3.44 1.35l2.58-2.58C13.46.89 11.43 0 9 0A9 9 0 0 0 .96 4.96l3.01 2.33C4.68 5.16 6.66 3.58 9 3.58z" fill="#EA4335"/></svg>
-              <span>Sign in with Google</span>
-            </div>
+            <p>Sign in with your Google account. Lio requests read-only access&mdash;it can never send, delete, or modify your emails. You can revoke access from Google settings at any time.</p>
+            <!-- Official Google Sign-In button: Roboto Medium 14px, Google brand colors, 8px icon padding -->
+            <button type="button" class="g-signin" aria-label="Sign in with Google" disabled>
+              <div class="g-signin-icon">
+                <svg width="18" height="18" viewBox="0 0 18 18"><path d="M17.64 9.2a10.3 10.3 0 0 0-.16-1.84H9v3.48h4.84a4.14 4.14 0 0 1-1.8 2.72v2.26h2.92A8.78 8.78 0 0 0 17.64 9.2z" fill="#4285F4"/><path d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.92-2.26c-.8.54-1.83.86-3.04.86-2.34 0-4.32-1.58-5.03-3.71H.96v2.33A9 9 0 0 0 9 18z" fill="#34A853"/><path d="M3.97 10.71A5.41 5.41 0 0 1 3.68 9c0-.59.1-1.17.28-1.71V4.96H.96A9 9 0 0 0 0 9c0 1.45.35 2.82.96 4.04l3.01-2.33z" fill="#FBBC05"/><path d="M9 3.58c1.32 0 2.51.45 3.44 1.35l2.58-2.58C13.46.89 11.43 0 9 0A9 9 0 0 0 .96 4.96l3.01 2.33C4.68 5.16 6.66 3.58 9 3.58z" fill="#EA4335"/></svg>
+              </div>
+              <span class="g-signin-text">Sign in with Google</span>
+            </button>
           </div>
         </div>
 
@@ -163,7 +264,7 @@
           <div class="hiw-num">02</div>
           <div>
             <h3>Lio scans on-device</h3>
-            <p>The AI classification pipeline runs entirely on your iPhone using Apple&rsquo;s on-device models. Your emails are analyzed locally&mdash;nothing is sent to external servers for routine processing.</p>
+            <p>The classification pipeline runs entirely on your iPhone using Apple&rsquo;s on-device models. Lio looks specifically for bills, renewals, payment confirmations, and warranty receipts. Personal emails, chats, and newsletters are ignored&mdash;nothing leaves your phone.</p>
           </div>
         </div>
 
@@ -171,7 +272,7 @@
           <div class="hiw-num">03</div>
           <div>
             <h3>Act on what matters</h3>
-            <p>Bills, renewals, and warranties surface as simple cards on The Pulse. One tap to pay, review, or dismiss. No more digging through your inbox.</p>
+            <p>Bills and renewals surface as cards on The Pulse&mdash;your daily briefing. &ldquo;Your Xfinity bill of $89.99 is due Friday.&rdquo; One tap to pay. Settled items show with a checkmark so you can see what&rsquo;s handled.</p>
           </div>
         </div>
       </div>
@@ -187,7 +288,7 @@
     <div class="container">
       <div style="text-align:center; max-width: 560px; margin: 0 auto 20px;">
         <span class="section-label reveal">Features</span>
-        <h2 class="reveal">Everything you need to stay ahead of life</h2>
+        <h2 class="reveal">Built for people who have better things to do</h2>
       </div>
 
       <div class="feat-grid stagger">
@@ -196,7 +297,7 @@
             <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
           </div>
           <h3>The Pulse</h3>
-          <p>Your daily briefing. The 1&ndash;3 most urgent items&mdash;bills due, renewals approaching, anomalies detected&mdash;ranked by what actually matters right now.</p>
+          <p>Open the app, see what needs doing. Your 1&ndash;3 most urgent items&mdash;a bill due Friday, a renewal charging next week, a warranty about to expire&mdash;ranked by deadline, not by when the email arrived.</p>
         </div>
 
         <div class="feat reveal">
@@ -204,7 +305,7 @@
             <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
           </div>
           <h3>The Vault</h3>
-          <p>A living registry of your household assets, warranties, subscriptions, and documents&mdash;automatically populated from your email. Search by name or ask in plain English.</p>
+          <p>Every appliance, subscription, warranty, and insurance policy you own&mdash;in one place. Lio populates it from your email. Ask &ldquo;when does my Dyson warranty expire?&rdquo; and get an answer.</p>
         </div>
 
         <div class="feat reveal">
@@ -212,7 +313,7 @@
             <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
           </div>
           <h3>Anomaly Detection</h3>
-          <p>Bill jumped 20% from last month? Lio flags it instantly so you can investigate before autopay kicks in and drains your account.</p>
+          <p>Your electric bill jumped from $120 to $185? Lio flags it before autopay drains the difference. You decide whether to pay, dispute, or investigate.</p>
         </div>
 
         <div class="feat reveal">
@@ -220,7 +321,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
           <h3>Warranty Tracking</h3>
-          <p>Lio extracts warranty details from purchase receipts and alerts you before coverage expires. Never miss a claim again.</p>
+          <p>Lio extracts warranty details from your purchase receipts. When your MacBook Pro or Dyson Airwrap coverage is about to expire, you hear about it weeks early&mdash;not after it&rsquo;s too late.</p>
         </div>
 
         <div class="feat reveal">
@@ -228,15 +329,28 @@
             <svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
           </div>
           <h3>Smart Notifications</h3>
-          <p>Only what matters. Lio filters out the noise and pings you only for bills, renewals, and items that genuinely need your action.</p>
+          <p>No spam. No marketing noise. Lio only notifies you about bills approaching their due date, renewals about to charge, and warranties about to expire. That&rsquo;s it.</p>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="feat reveal">
-          <div class="feat-icon terra">
-            <svg viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
+  <!-- ==================== Nuke Button (standalone) ==================== -->
+  <section class="nuke-section">
+    <div class="container">
+      <div class="nuke-inner reveal">
+        <div class="nuke-visual">
+          <div class="nuke-btn-demo">
+            <div class="nuke-circle">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>
+            </div>
+            <span class="nuke-label-text">Delete Everything</span>
           </div>
+        </div>
+        <div class="nuke-copy">
           <h3>The Nuke Button</h3>
-          <p>One tap. All data, tokens, and history&mdash;gone. Revokes Gmail access at Google&rsquo;s servers instantly. Your data is always yours to destroy.</p>
+          <p>One tap. Every piece of data Lio has ever stored&mdash;classification results, vault entries, sync history, OAuth tokens&mdash;deleted instantly. This also revokes Lio&rsquo;s access to your Gmail at Google&rsquo;s servers. Not &ldquo;within 30 days.&rdquo; Not &ldquo;after review.&rdquo; Immediately. No backups survive.</p>
+          <p class="nuke-sub">You trusted Lio with access. The Nuke Button is how you take it back, completely, whenever you want.</p>
         </div>
       </div>
     </div>
@@ -301,16 +415,6 @@
             <p>Lio can only read emails. It cannot send, delete, modify, or take any action on your Gmail account. Revoke access anytime from Google settings.</p>
           </div>
         </div>
-
-        <div class="safety-item reveal">
-          <div class="safety-check">
-            <svg viewBox="0 0 16 16" fill="none"><path d="M4 8l3 3 5-5" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div>
-            <h3>Delete everything in one tap</h3>
-            <p>The Nuke Button instantly deletes all stored data and revokes Gmail access at Google&rsquo;s servers. No retention period. No backups. Gone.</p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -319,8 +423,8 @@
   <section class="cta-section" id="get-lio">
     <div class="container" style="position:relative;">
       <span class="section-label reveal" style="justify-content:center;">Get Started</span>
-      <h2 class="reveal">Take back your time</h2>
-      <p class="cta-body reveal">Stop digging through your inbox for bills and due dates. Let Lio handle the admin so you can focus on everything else.</p>
+      <h2 class="reveal">Stop paying for things you forgot about</h2>
+      <p class="cta-body reveal">Late fees, expired warranties, forgotten subscriptions&mdash;they add up. Lio catches them before they cost you.</p>
       <div class="reveal">
         <a href="#" class="btn btn-primary">Download for iOS</a>
       </div>
